@@ -52,8 +52,7 @@ namespace AdventOfCodeFeltilizer_Day5
                     }
                 }
             }
-
-            return new Almanac();
+            return almanac;
         }
         private static void ProcessSeeds(Almanac almanac, string data)
         {
@@ -109,8 +108,6 @@ namespace AdventOfCodeFeltilizer_Day5
                     allInstructions.Add(new Instructions(destinationRange, sourceRange, rangeLength));
                 }
             }
-
-
             return allInstructions;
         }
 

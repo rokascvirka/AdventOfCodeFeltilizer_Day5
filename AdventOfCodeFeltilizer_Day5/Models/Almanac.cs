@@ -19,8 +19,7 @@ namespace AdventOfCodeFeltilizer_Day5.Models
 
         public Almanac()
         {
-            Seeds = new List<Seed>();
-            SoilMap = new List<Instructions>();
+            Seeds = new List<Seed>();            SoilMap = new List<Instructions>();
             WaterMap = new List<Instructions>();
             LightMap = new List<Instructions>();
             TemperatureMap = new List<Instructions>();

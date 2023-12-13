@@ -32,5 +32,26 @@ namespace AdventOfCodeFeltilizer_Day5
             }
             return number;
         }
+
+        public static void UpdateSeeds(Almanac almanac)
+        {
+            for(int i = 0;  i < almanac.Seeds.Count-1; i++)
+            {
+                if(i % 2 == 0)
+                {
+                    continue;
+                }
+                else
+                {
+                    var seedStartIndex = almanac.Seeds[i].SeedId;
+                    var seedCount = almanac.Seeds[i + 1].SeedId;
+
+                    for (long j = seedStartIndex; i < seedCount; j++)
+                    {
+                        almanac.UpdatedSeeds.Add(new Seed() { SeedId = j });
+                    }
+                }
+            }
+        }
     }
 }

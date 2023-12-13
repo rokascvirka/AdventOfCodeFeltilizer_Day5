@@ -18,6 +18,9 @@ namespace AdventOfCodeFeltilizer_Day5
                 locationNumbers.Add(seed.Location);
             }
             long lowestLocationNumber = locationNumbers.Min();
+
+            Calculator.UpdateSeeds(almanac);
+            Console.WriteLine($"Seeds count: {almanac.Seeds.Count}, updated seeds count: {almanac.UpdatedSeeds.Count}");
             Console.WriteLine($"Location number: {lowestLocationNumber}");
         }
 
